@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Uma surpresa só para ti! 🎁</h1>
+        <p>Quero que saibas que cada segundo ao teu lado é uma bênção. Obrigado por fazer parte da minha vida! 💖</p>
+
+        <div class="video-container">
+            <video width="320" height="240" controls>
+                <source src="video/surpresa.mp4" type="video/mp4">
+                O teu navegador não suporta vídeos.
+            </video>
+        </div>
+        <p>Espero que tenhas gostado! Clica no botão abaixo para ver algo especial. 😍</p>
+        <button onclick="mostrarMensagem()" class="botao">Clica aqui</button>
+
+        <p id="mensagem" style="display: none; font-size: 22px; color: #ff4d4d;">EU TE AMO MAIS QUE TUDO PRINCESA ❤️</p>
+    </div>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").style.display = "block";
+        }
+    </script>
+</body>
+</html>
