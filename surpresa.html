@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surpresa Especial</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(imagens/foto2.jpeg);
+            background-position: center;
+           
+        }
+        
+    </style>
 </head>
 <body>
     <div class="container">
@@ -20,7 +28,10 @@
         <p>Espero que tenhas gostado! Clica no botão abaixo para ver algo especial. 😍</p>
         <button onclick="mostrarMensagem()" class="botao">Clica aqui</button>
 
-        <p id="mensagem" style="display: none; font-size: 22px; color: #ff4d4d;">EU TE AMO MAIS QUE TUDO PRINCESA ❤️</p>
+        <p id="mensagem" style="display: none; font-size: 22px; color: #ff4d4d;">
+            <canvas id="heart"></canvas>
+        <script  src="./script.js"></script>
+        </p>
     </div>
 
     <script>
@@ -28,5 +39,12 @@
             document.getElementById("mensagem").style.display = "block";
         }
     </script>
+
+    <audio id="musicaFundo" autoplay loop>
+        <source src="imagens/certa.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        document.getElementById("musicaFundo").volume = 0.2;
+    </script> 
 </body>
 </html>
